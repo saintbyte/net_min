@@ -37,7 +37,6 @@ def normalize_list(lst):
         ip_len_global = IPV6LENGTH
         lst = convert_list_to_ipv6(lst)
     lst = convert_list_ips_to_int(lst)
-    lst.sort()
     return (ip_len_global, addr_family_global, lst)
 
 
@@ -69,7 +68,7 @@ def main():
         quit()
     (ip_len_global, addr_family_global, ip_list) = normalize_list(ip_list)
     (net_addr_bin, cnt) = calc_min_network_by_ip_int(
-        ip_list[0], ip_list[-1], ip_len_global)
+        min(ip_list), max(ip_list), ip_len_global)
     print(format_network(int_to_ip(addr_family_global,
                                    bin_array_to_int(net_addr_bin)), cnt))
 
