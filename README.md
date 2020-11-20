@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaintbyte%2Fnet_min.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaintbyte%2Fnet_min?ref=badge_shield)
+
 # Net_Min #
 Расчет минимально возможной сети для некоторого множества IP. Поддерживает IPv4/IPv6. 
 Если в множестве IP есть IPv6 - адреса IPv4 будут преобразованы в IPv6
@@ -33,3 +35,6 @@
 
 ## TODO ##
 Сделать нормальную проверку валидности IP ( а то сейчас просто падает со стектрейсом если  IP неправильный )
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaintbyte%2Fnet_min.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaintbyte%2Fnet_min?ref=badge_large)
